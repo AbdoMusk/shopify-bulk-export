@@ -85,7 +85,7 @@ async function startBulkQuery(query: string, client: Got): Promise<string> {
   }
 
   if (!data.bulkOperationRunQuery?.bulkOperation?.id) {
-    throw new Error('Missing buk operation ID.')
+    throw new Error('Missing bulk operation ID.')
   }
 
   return data.bulkOperationRunQuery.bulkOperation.id
